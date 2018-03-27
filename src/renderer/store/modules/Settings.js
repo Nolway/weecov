@@ -8,13 +8,18 @@ const state = {
 }
 
 const mutations = {
-}
-
-const actions = {
+    setHost (state, host){
+        state.voip.host = host;
+    },
+    setSip (state, sip){
+        state.voip.sip = sip;
+    },
+    setSipPass (state, sipPass){
+        state.voip.sipPass = sipPass;
+    }
 }
 
 export default {
     state,
-    mutations,
-    actions
+    mutations
 }

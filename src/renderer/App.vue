@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+      <transition name="fade">
+        <router-view></router-view>
+      </transition>
   </div>
 </template>
 
@@ -14,5 +16,11 @@
   @import '~@/assets/style/material-icons.min.css';
   html {
     overflow-y: hidden;
+  }
+  .fade-enter-active, .fade-leave-active {
+       transition: opacity .5s;
+   }
+  .fade-enter, .fade-leave-to {
+      opacity: 0;
   }
 </style>
