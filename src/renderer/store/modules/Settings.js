@@ -1,4 +1,5 @@
 const state = {
+    isOpen: true,
     voip: {
         host: null,
         sip: null,
@@ -8,6 +9,12 @@ const state = {
 }
 
 const mutations = {
+    openSettings (state){
+        state.isOpen = true;
+    },
+    closeSettings (state){
+        state.isOpen = false;
+    },
     setHost (state, host){
         state.voip.host = host;
     },
