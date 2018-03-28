@@ -23,6 +23,7 @@
                                                     v-model="agentSelected"
                                                     @click.native="getAgents"
                                                     item-text="agent"
+                                                    no-data-text="Aucun agent trouvé"
                                                     label="Merci de sélectionner votre profil"
                                                     autocomplete
                                             ></v-select>

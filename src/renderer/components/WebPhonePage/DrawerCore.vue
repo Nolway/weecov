@@ -16,7 +16,7 @@
         <v-list class="pt-0" dense>
             <v-divider></v-divider>
 
-            <v-list-tile @click.stop="login();">
+            <v-list-tile @click.stop="">
                 <v-list-tile-action>
                     <v-icon>power_settings_new</v-icon>
                 </v-list-tile-action>
@@ -25,7 +25,52 @@
                 </v-list-tile-content>
             </v-list-tile>
 
-            <v-list-tile @click.stop="openSettings();" >
+            <v-list-tile @click.stop="">
+                <v-list-tile-action>
+                    <v-icon>mic_off</v-icon>
+                </v-list-tile-action>
+                <v-list-tile-content>
+                    <v-list-tile-title>Muet</v-list-tile-title>
+                </v-list-tile-content>
+            </v-list-tile>
+
+            <v-list-tile @click.stop="">
+                <v-list-tile-action>
+                    <v-icon>call</v-icon>
+                </v-list-tile-action>
+                <v-list-tile-content>
+                    <v-list-tile-title>Appel Manuel</v-list-tile-title>
+                </v-list-tile-content>
+            </v-list-tile>
+
+            <v-list-tile @click.stop="">
+                <v-list-tile-action>
+                    <v-icon>call_merge</v-icon>
+                </v-list-tile-action>
+                <v-list-tile-content>
+                    <v-list-tile-title>Soufflage</v-list-tile-title>
+                </v-list-tile-content>
+            </v-list-tile>
+
+            <v-list-tile @click.stop="">
+                <v-list-tile-action>
+                    <v-icon>call_split</v-icon>
+                </v-list-tile-action>
+                <v-list-tile-content>
+                    <v-list-tile-title>Ecoute</v-list-tile-title>
+                </v-list-tile-content>
+            </v-list-tile>
+
+            <v-list-tile @click.stop="">
+                <v-list-tile-action>
+                    <v-icon>phone_paused</v-icon>
+                </v-list-tile-action>
+                <v-list-tile-content>
+                    <v-list-tile-title>Mettre en attente</v-list-tile-title>
+                </v-list-tile-content>
+            </v-list-tile>
+
+            <v-list-tile @click.stop="">
                 <v-list-tile-action>
                     <v-icon>settings</v-icon>
                 </v-list-tile-action>
@@ -50,9 +95,6 @@
             }
         },
         methods: {
-            openSettings: function () {
-                this.$store.dispatch('openSettings');
-            }
         }
     }
 </script>
